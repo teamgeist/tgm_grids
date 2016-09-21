@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+	<ROOT type="array">
+		<type>array</type>
+		<el type="array">
+			<containerWidth>
+				<TCEforms>
+					<label>Breite</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">volle Breite</numIndex>
+								<numIndex index="1">0</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">67% mittig</numIndex>
+								<numIndex index="1">1</numIndex>
+							</numIndex>
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</containerWidth>
+			<background>
+				<TCEforms>
+					<label>Hintergrund</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">weiß mit Logo</numIndex>
+								<numIndex index="1">logo</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">graue Blasen</numIndex>
+								<numIndex index="1">bubble</numIndex>
+							</numIndex>
+							<numIndex index="2" type="array">
+								<numIndex index="0">hellblau</numIndex>
+								<numIndex index="1">blue</numIndex>
+							</numIndex>
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</background>
+			<contentContainer>
+				<TCEforms type="array">
+					<label>Abstand um den Inhalt</label>
+					<config>
+						<type>check</type>
+						<default>1</default>
+					</config>
+				</TCEforms>
+			</contentContainer>
+			<border-top>
+				<TCEforms type="array">
+					<label>Linie unter der Überschrift</label>
+					<config>
+						<type>check</type>
+						<default>1</default>
+					</config>
+				</TCEforms>
+			</border-top>
+			<border-bottom>
+				<TCEforms type="array">
+					<label>Linie unter Inhalt</label>
+					<config>
+						<type>check</type>
+						<default>1</default>
+					</config>
+				</TCEforms>
+			</border-bottom>
+			<additionalClasses>
+				<TCEforms type="array">
+					<label>zusätzliche CSS-Klassen</label>
+					<config>
+						<type>input</type>
+						<size>20</size>
+						<max>50</max>
+						<eval>trim</eval>
+					</config>
+				</TCEforms>
+			</additionalClasses>
+		</el>
+	</ROOT>
+</T3DataStructure>

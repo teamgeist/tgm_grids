@@ -1,0 +1,17 @@
+<section class="mastergrid {data.flexform_background}<f:if condition="{data.flexform_additionalClasses}==0"> {data.flexform_additionalClasses}</f:if>">
+	<div class="container {data.uid}">
+		<div class="row">
+			<f:if condition="{data.flexform_containerWidth}==0"><div class="col-sm-12"></f:if>
+			<f:if condition="{data.flexform_containerWidth}==1"><div class="col-sm-8 col-sm-offset-2"></f:if>
+				<f:cObject typoscriptObjectPath="lib.stdheader" data="{data}"/>
+				<f:if condition="{data.flexform_border-top}==1"><div class="border-top"></div></f:if>
+					<f:if condition="{data.flexform_contentContainer}==1"><div class="ce-mastergrid-content"></f:if>
+						<f:format.raw>
+							{data.tx_gridelements_view_column_20}
+						</f:format.raw>
+				<f:if condition="{data.flexform_contentContainer}==1"></div></f:if>
+				<f:if condition="{data.flexform_border-bottom}==1"><div class="border-bottom"></div></f:if>
+			</div>
+		</div>
+	</div>
+</section>

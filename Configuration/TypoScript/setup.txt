@@ -1,0 +1,59 @@
+tt_content.gridelements_pi1.10 =< lib.stdheader
+
+tt_content.gridelements_pi1.20.10.setup {
+  mastergrid < lib.gridelements.defaultGridSetup
+  mastergrid {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/Mastergrid.html
+    }
+  }
+
+	2col-50-50 < lib.gridelements.defaultGridSetup
+  2col-50-50 {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/2col-50-50.html
+    }
+  }
+
+  2col-25-75 < lib.gridelements.defaultGridSetup
+  2col-25-75 {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/2col-25-75.html
+    }
+  }
+
+  2col-33-67 < lib.gridelements.defaultGridSetup
+  2col-33-67 {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/2col-33-67.html
+    }
+  }
+
+  2col-67-33 < lib.gridelements.defaultGridSetup
+  2col-67-33 {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/2col-67-33.html
+    }
+  }
+
+  3col-25-50-25 < lib.gridelements.defaultGridSetup
+  3col-25-50-25 {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/3col-25-50-25.html
+    }
+  }
+
+  4col-25-25-25-25 < lib.gridelements.defaultGridSetup
+  4col-25-25-25-25 {
+    cObject = FLUIDTEMPLATE
+    cObject {
+      file = EXT:tgm_grids/Resources/Private/Templates/4col-25-25-25-25.html
+    }
+  }
+}
