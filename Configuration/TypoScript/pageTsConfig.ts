@@ -76,9 +76,36 @@ tx_gridelements {
       }
       flexformDS =
     }
-    2col-33-67 {
-      title = Container mit 2 Spalten (33|67)
-      description = Einfacher Container mit 2 Spalten (33 % | 67 %)
+		2col-75-25 {
+			title = Container mit 2 Spalten (75|25)
+			description = Einfacher Container mit 2 Spalten (75 % | 25 %)
+			icon =
+			frame =
+			topLevelLayout = 0
+			config {
+				colCount = 4
+				rowCount = 1
+				rows {
+					1 {
+						columns {
+							1 {
+								name = linke Spalte
+								colPos = 20
+								colspan = 3
+							}
+							2 {
+								name = rechte Spalte
+								colPos = 21
+							}
+						}
+					}
+				}
+			}
+			flexformDS =
+		}
+    2col-33-66 {
+      title = Container mit 2 Spalten (33|66)
+      description = Einfacher Container mit 2 Spalten (33 % | 66 %)
       icon =
       frame =
       topLevelLayout = 0
@@ -103,9 +130,9 @@ tx_gridelements {
       }
       flexformDS =
     }
-    2col-67-33 {
-      title = Container mit 2 Spalten (67|33)
-      description = Einfacher Container mit 2 Spalten (67 % | 33 %)
+    2col-66-33 {
+      title = Container mit 2 Spalten (66|33)
+      description = Einfacher Container mit 2 Spalten (66 % | 33 %)
       icon =
       frame =
       topLevelLayout = 0
@@ -123,6 +150,36 @@ tx_gridelements {
               2 {
                 name = rechte Spalte
                 colPos = 21
+              }
+            }
+          }
+        }
+      }
+      flexformDS =
+    }
+    3col-33-33-33 {
+      title = Container mit 3 Spalten (33-33-33)
+      description = Container mit 3 Spalten (33 % | 33 % | 33 %)
+      icon =
+      frame =
+      topLevelLayout = 0
+      config {
+        colCount = 3
+        rowCount = 1
+        rows {
+          1 {
+            columns {
+              1 {
+                name = Spalte 1
+                colPos = 20
+              }
+              2 {
+                name = Spalte 2
+                colPos = 21
+              }
+              3 {
+                name = Spalte 3
+                colPos = 22
               }
             }
           }

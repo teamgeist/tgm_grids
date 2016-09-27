@@ -1,8 +1,17 @@
-# Wenn aktiv wird bei den Gridelements standardmaesig die ueberschrift aus dem tt_content Element gerendert.
-# Das fuehrt bei elementen, wie dem Mastergrid, welches den Titel schon im Template rendert zu einer doppelten Ausgabe.
-# tt_content.gridelements_pi1.10 =< lib.stdheader
+tt_content.gridelements_pi1.10 =< lib.stdheader
 
 tt_content.gridelements_pi1.20.10.setup {
+
+	default < lib.gridelements.defaultGridSetup
+	default {
+		cObject = FLUIDTEMPLATE
+		cObject {
+			file = EXT:tgm_grids/Resources/Private/Templates/grid-wrap.html
+			partialRootPath = EXT:tgm_grids/Resources/Private/Partials/
+			variables.partial = TEXT
+		}
+	}
+
   mastergrid < lib.gridelements.defaultGridSetup
   mastergrid {
     cObject = FLUIDTEMPLATE
@@ -11,51 +20,27 @@ tt_content.gridelements_pi1.20.10.setup {
     }
   }
 
-	2col-50-50 < lib.gridelements.defaultGridSetup
-  2col-50-50 {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/2col-50-50.html
-    }
-  }
+	2col-50-50 < .default
+  2col-50-50.cObject.variables.partial.value = 2col-50-50
 
-  2col-25-75 < lib.gridelements.defaultGridSetup
-  2col-25-75 {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/2col-25-75.html
-    }
-  }
+  2col-25-75 < .default
+	2col-25-75.cObject.variables.partial.value = 2col-25-75
 
-  2col-33-67 < lib.gridelements.defaultGridSetup
-  2col-33-67 {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/2col-33-67.html
-    }
-  }
+	2col-75-25 < .default
+	2col-75-25.cObject.variables.partial.value = 2col-75-25
 
-  2col-67-33 < lib.gridelements.defaultGridSetup
-  2col-67-33 {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/2col-67-33.html
-    }
-  }
+  2col-33-66 < .default
+	2col-33-66.cObject.variables.partial.value = 2col-33-66
 
-  3col-25-50-25 < lib.gridelements.defaultGridSetup
-  3col-25-50-25 {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/3col-25-50-25.html
-    }
-  }
+  2col-66-33 < .default
+	2col-66-33.cObject.variables.partial.value = 2col-66-33
 
-  4col-25-25-25-25 < lib.gridelements.defaultGridSetup
-  4col-25-25-25-25 {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/4col-25-25-25-25.html
-    }
-  }
+	3col-33-33-33 < .default
+	3col-33-33-33.cObject.variables.partial.value = 3col-33-33-33
+
+  3col-25-50-25 < .default
+	3col-25-50-25.cObject.variables.partial.value = 3col-25-50-25
+
+  4col-25-25-25-25 < .default
+	4col-25-25-25-25.cObject.variables.partial.value = 4col-25-25-25-25
 }
