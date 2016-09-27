@@ -1,4 +1,6 @@
-tt_content.gridelements_pi1.10 =< lib.stdheader
+# Wenn aktiv wird bei den Gridelements standardmaesig die ueberschrift aus dem tt_content Element gerendert.
+# Das fuehrt bei elementen, wie dem Mastergrid, welches den Titel schon im Template rendert zu einer doppelten Ausgabe.
+# tt_content.gridelements_pi1.10 =< lib.stdheader
 
 tt_content.gridelements_pi1.20.10.setup {
   mastergrid < lib.gridelements.defaultGridSetup
