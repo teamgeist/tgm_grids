@@ -52,7 +52,7 @@ tx_gridelements {
     2col-25-75 {
       title = Container mit 2 Spalten (25|75)
       description = Einfacher Container mit 2 Spalten (25 % | 75 %)
-      icon =
+      icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/25-75.png
       frame =
       topLevelLayout = 0
       config {
@@ -79,7 +79,7 @@ tx_gridelements {
 		2col-75-25 {
 			title = Container mit 2 Spalten (75|25)
 			description = Einfacher Container mit 2 Spalten (75 % | 25 %)
-			icon =
+			icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/75-25.png
 			frame =
 			topLevelLayout = 0
 			config {
@@ -106,7 +106,7 @@ tx_gridelements {
     2col-33-66 {
       title = Container mit 2 Spalten (33|66)
       description = Einfacher Container mit 2 Spalten (33 % | 66 %)
-      icon =
+      icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/33-66.png
       frame =
       topLevelLayout = 0
       config {
@@ -133,7 +133,7 @@ tx_gridelements {
     2col-66-33 {
       title = Container mit 2 Spalten (66|33)
       description = Einfacher Container mit 2 Spalten (66 % | 33 %)
-      icon =
+      icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/66-33.png
       frame =
       topLevelLayout = 0
       config {
@@ -160,7 +160,7 @@ tx_gridelements {
     3col-33-33-33 {
       title = Container mit 3 Spalten (33-33-33)
       description = Container mit 3 Spalten (33 % | 33 % | 33 %)
-      icon =
+      icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/33-33-33.png
       frame =
       topLevelLayout = 0
       config {
@@ -190,7 +190,7 @@ tx_gridelements {
     3col-25-50-25 {
       title = Container mit 3 Spalten (25|50|25)
       description = Container mit 3 Spalten (25 % | 50 % | 25 %)
-      icon =
+      icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/25-50-25.png
       frame =
       topLevelLayout = 0
       config {
@@ -221,7 +221,7 @@ tx_gridelements {
     4col-25-25-25-25 {
       title = Container mit 4 Spalten (25|25|25|25)
       description = Container mit 4 Spalten (25 % | 25 % | 25 % | 25 %)
-      icon =
+      icon = ../typo3conf/ext/tgm_grids/Resources/Public/Images/Icons/25-25-25-25.png
       frame =
       topLevelLayout = 0
       config {
