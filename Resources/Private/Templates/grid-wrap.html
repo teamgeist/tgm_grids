@@ -1,4 +1,4 @@
-<div id="c{data.uid}" class="fsc-default {data.layout}">
+<div id="c{data.uid}" class="fsc-default gridelement<f:if condition="{data.layout}"> {data.layout}</f:if>">
 	<f:cObject typoscriptObjectPath="lib.stdheader" data="{data}"/>
 	<f:render partial="{partial}" arguments="{_all}"/>
 </div>
