@@ -24,6 +24,7 @@
 						</items>
 						<maxitems>1</maxitems>
 						<size>1</size>
+						<default>1</default>
 					</config>
 				</TCEforms>
 			</containerWidth>
@@ -34,16 +35,28 @@
 						<type>select</type>
 						<items type="array">
 							<numIndex index="0" type="array">
-								<numIndex index="0">weiß mit Logo</numIndex>
-								<numIndex index="1">logo</numIndex>
+								<numIndex index="0">normal weiß</numIndex>
+								<numIndex index="1">default</numIndex>
 							</numIndex>
 							<numIndex index="1" type="array">
-								<numIndex index="0">graue Blasen</numIndex>
-								<numIndex index="1">bubble</numIndex>
+								<numIndex index="0">in Hauptfarbe (Kontaktbereich)</numIndex>
+								<numIndex index="1">leitfarbe-bg</numIndex>
 							</numIndex>
 							<numIndex index="2" type="array">
-								<numIndex index="0">hellblau</numIndex>
-								<numIndex index="1">blue</numIndex>
+								<numIndex index="0">Parallax Motiv 1</numIndex>
+								<numIndex index="1">motiv1 parallax</numIndex>
+							</numIndex>
+							<numIndex index="3" type="array">
+								<numIndex index="0">Parallax Motiv 2</numIndex>
+								<numIndex index="1">motiv2 parallax</numIndex>
+							</numIndex>
+							<numIndex index="4" type="array">
+								<numIndex index="0">Parallax Motiv 3</numIndex>
+								<numIndex index="1">motiv3 parallax</numIndex>
+							</numIndex>
+							<numIndex index="5" type="array">
+								<numIndex index="0">Parallax Motiv 4</numIndex>
+								<numIndex index="1">motiv4 parallax</numIndex>
 							</numIndex>
 						</items>
 						<maxitems>1</maxitems>
@@ -51,6 +64,26 @@
 					</config>
 				</TCEforms>
 			</background>
+			<headerColor>
+				<TCEforms>
+					<label>Überschrift-Farbe</label>
+					<config>
+						<type>select</type>
+						<items type="array">
+							<numIndex index="0" type="array">
+								<numIndex index="0">normal Leitfarbe</numIndex>
+								<numIndex index="1">header-color-default</numIndex>
+							</numIndex>
+							<numIndex index="1" type="array">
+								<numIndex index="0">dunkel</numIndex>
+								<numIndex index="1">header-color-dark</numIndex>
+							</numIndex>
+						</items>
+						<maxitems>1</maxitems>
+						<size>1</size>
+					</config>
+				</TCEforms>
+			</headerColor>
 			<contentContainer>
 				<TCEforms type="array">
 					<label>Abstand um den Inhalt</label>
