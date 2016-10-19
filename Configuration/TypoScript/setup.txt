@@ -7,7 +7,9 @@ tt_content.gridelements_pi1.20.10.setup {
 		cObject = FLUIDTEMPLATE
 		cObject {
 			file = EXT:tgm_grids/Resources/Private/Templates/grid-wrap.html
-			partialRootPath = EXT:tgm_grids/Resources/Private/Partials/
+			partialRootPaths {
+				1 = EXT:tgm_grids/Resources/Private/Partials/
+			}
 			variables.partial = TEXT
 		}
 	}
