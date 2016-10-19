@@ -11,8 +11,8 @@
  ***************************************************************/
 
 $EM_CONF[$_EXTKEY] = array(
-	'title' => 'TgM Grids',
-	'description' => '',
+	'title' => 'Predefined Gridelements',
+	'description' => 'Provides some frequently used gridelements with 2, 3 and 4 columns. Furthermore there is a fullwidth (.container) Mastergridelement which can be used only as toplevel element.',
 	'category' => 'plugin',
 	'author' => 'Steffen Thierock',
 	'author_email' => 'st@teamgeist-medien.de',
@@ -21,11 +21,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'uploadfolder' => '0',
 	'createDirs' => '',
 	'clearCacheOnLoad' => 0,
-	'version' => '0.1.1',
+	'version' => '0.2.0',
 	'constraints' => array(
 		'depends' => array(
 			'typo3' => '7.6.0-7.6.99',
-			'gridelements' => '3.3.0',
+			'gridelements' => '7.0.0',
 		),
 		'conflicts' => array(
 		),
