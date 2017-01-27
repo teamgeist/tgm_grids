@@ -1,4 +1,4 @@
-<section id="c{data.uid}" class="mastergrid {data.flexform_background} {data.flexform_headerColor}<f:if condition="{data.flexform_additionalClasses}==0"> {data.flexform_additionalClasses}</f:if>">
+<section id="c{data.uid}" class="mastergrid {data.flexform_background} {data.flexform_headerColor} {f:if(condition: data.flexform_additionalClasses, then: data.flexform_additionalClasses, else: '')}">
     <div class="container">
         <div class="row">
             <f:if condition="{data.flexform_containerWidth}==0"><div class="col-sm-12"></f:if>
