@@ -1,48 +1,56 @@
 #tt_content.gridelements_pi1.10 =< lib.stdheader
 tt_content.gridelements_pi1.10 >
 tt_content.gridelements_pi1.20.10.setup {
-
 	default < lib.gridelements.defaultGridSetup
 	default {
 		cObject = FLUIDTEMPLATE
 		cObject {
-			file = EXT:tgm_grids/Resources/Private/Templates/grid-wrap.html
-			partialRootPaths {
-				1 = EXT:tgm_grids/Resources/Private/Partials/
+			#file = EXT:tgm_grids/Resources/Private/Templates/grid-wrap.html
+			templateName = Default
+			templateRootPaths {
+				10 = EXT:tgm_grids/Resources/Private/Templates/
+				100 = {$plugin.tx_tgmgrids.view.templateRootPath}
 			}
+
+			partialRootPaths {
+				10 = EXT:tgm_grids/Resources/Private/Partials/
+				100 = {$plugin.tx_tgmgrids.view.partialRootPath}
+			}
+
+			layoutRootPaths {
+				10 = EXT:tgm_grids/Resources/Private/Layouts/
+				100 = {$plugin.tx_tgmgrids.view.layoutRootPath}
+			}
+
 			variables.partial = TEXT
+			templateName = grid-wrap
 		}
 	}
 
-  mastergrid < lib.gridelements.defaultGridSetup
-  mastergrid {
-    cObject = FLUIDTEMPLATE
-    cObject {
-      file = EXT:tgm_grids/Resources/Private/Templates/Mastergrid.html
-    }
-  }
+	mastergrid < .default
+	mastergrid.cObject.templateName = Mastergrid
 
 	2col-50-50 < .default
-  2col-50-50.cObject.variables.partial.value = 2col-50-50
+	2col-50-50.cObject.variables.partial.value = 2col-50-50
 
-  2col-25-75 < .default
+	2col-25-75 < .default
 	2col-25-75.cObject.variables.partial.value = 2col-25-75
 
 	2col-75-25 < .default
 	2col-75-25.cObject.variables.partial.value = 2col-75-25
 
-  2col-33-66 < .default
+	2col-33-66 < .default
 	2col-33-66.cObject.variables.partial.value = 2col-33-66
 
-  2col-66-33 < .default
+	2col-66-33 < .default
 	2col-66-33.cObject.variables.partial.value = 2col-66-33
 
 	3col-33-33-33 < .default
 	3col-33-33-33.cObject.variables.partial.value = 3col-33-33-33
 
-  3col-25-50-25 < .default
+	3col-25-50-25 < .default
 	3col-25-50-25.cObject.variables.partial.value = 3col-25-50-25
 
-  4col-25-25-25-25 < .default
+	4col-25-25-25-25 < .default
 	4col-25-25-25-25.cObject.variables.partial.value = 4col-25-25-25-25
 }

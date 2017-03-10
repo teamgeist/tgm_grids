@@ -1,0 +1,10 @@
+plugin.tx_tgmgrids {
+	view {
+		# cat=plugin.tx_tgmgrids/file; type=string; label=Path to template root (FE)
+		templateRootPath = EXT:tgm_grids/Resources/Private/Templates/
+		# cat=plugin.tx_tgmgrids/file; type=string; label=Path to template partials (FE)
+		partialRootPath = EXT:tgm_grids/Resources/Private/Partials/
+		# cat=plugin.tx_tgmgrids/file; type=string; label=Path to template layouts (FE)
+		layoutRootPath = EXT:tgm_grids/Resources/Private/Layouts/
+	}
+}
