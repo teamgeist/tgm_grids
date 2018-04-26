@@ -1,4 +1,4 @@
-<div id="c{data.uid}" class="fsc-default fsc-gridelement {f:if(condition: data.layout, then: data.layout, else: '')}">
+<div id="c{data.uid}" class="fsc-default fsc-gridelement {f:if(condition: data.layout, then: data.layout, else: '')} {f:if(condition: data.layout, then: data.layout, else: '')}{f:if(condition: data.space_before_class, then: ' frame-space-before-{data.space_before_class}')}{f:if(condition: data.space_after_class, then: ' frame-space-after-{data.space_after_class}')}">
 	<f:cObject typoscriptObjectPath="lib.stdheader" data="{data}"/>
 	<f:render partial="{partial}" arguments="{_all}"/>
 </div>
